@@ -4,6 +4,12 @@
 ____________________________________
 
 
+# Скринкаст:
+
+
+https://drive.google.com/file/d/1bf5oE23L7aOf2DscEhkkI4YwlB1VVR-Q/view?usp=drive_link
+
+
 # Что было сделано:
 
 
