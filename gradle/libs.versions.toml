@@ -1,4 +1,6 @@
 [versions]
+gradle = "8.2.0"
+kotlinGradlePlugin = "1.8.20"
 minSdk = "26"
 compileSdk = "34"
 targetSdk = "34"
@@ -74,6 +76,8 @@ compose-material-icons = { group = "androidx.compose.material", name = "material
 compose-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 compose-material = { module = "androidx.compose.material:material", version.ref = "compose-material" }
 
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }
 ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }

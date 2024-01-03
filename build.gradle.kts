@@ -1,3 +1,9 @@
+buildscript {
+    dependencies {
+        classpath(libs.kotlin.gradle.plugin)
+        classpath(libs.gradle)
+    }
+}
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 @Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
