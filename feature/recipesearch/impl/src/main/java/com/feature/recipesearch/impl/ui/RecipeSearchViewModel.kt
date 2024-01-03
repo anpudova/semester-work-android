@@ -64,7 +64,7 @@ class RecipeSearchViewModel @Inject constructor(
                 getRecipesUseCase(event.name)
             }.onSuccess { data ->
                 _state.emit(_state.value.copy(progressBarState = false, recipeDataState = data))
-                if (_state.value.recipeDataState == null) {
+                if (_state.value.recipeDataState?.recipes?.isEmpty() == true) {
                     _state.emit(_state.value.copy(messageState = "Not found recipes"))
                 } else {
                     _state.emit(_state.value.copy(messageState = ""))
@@ -83,7 +83,7 @@ class RecipeSearchViewModel @Inject constructor(
 
     private fun onMessageConnectShow() {
         viewModelScope.launch {
-            _state.emit(_state.value.copy(messageState = "No internet connection"))
+            _state.emit(_state.value.copy(recipeDataState = null, messageState = "No internet connection"))
         }
     }
 

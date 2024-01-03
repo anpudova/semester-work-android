@@ -131,17 +131,16 @@ fun RecipeSearchContent(
                     RecipeItem(recipe = it, eventHandler = eventHandler, preferencesManager = preferencesManager)
                 }
             }
-        } else {
-
-            Text(
-                text = viewState.messageState,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(top = 16.dp)
-            )
         }
 
-        // Progress Bar
+        Text(
+            text = viewState.messageState,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 16.dp)
+        )
+
+
         if (viewState.progressBarState) {
             CircularProgressIndicator(
                 modifier = Modifier

@@ -126,7 +126,7 @@ class DetailRecipeViewModel @Inject constructor(
 
     private fun onMessageConnectShow() {
         viewModelScope.launch {
-            _state.emit(_state.value.copy(messageState = "No internet connection"))
+            _state.emit(_state.value.copy(detailDataState = null, ingredientsDataState = null, messageState = "No internet connection"))
         }
     }
 

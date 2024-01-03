@@ -117,8 +117,7 @@ fun DetailRecipeContent(
     } else {
         LaunchedEffect(isLoading.value) {
             if (isLoading.value) {
-                eventHandler.invoke(DetailRecipeEvent.OnRequestIngredients(id))
-                eventHandler.invoke(DetailRecipeEvent.OnRequestDetail(id))
+                eventHandler.invoke(DetailRecipeEvent.OnMessageConnectShow)
                 isLoading.value = false
             }
         }
